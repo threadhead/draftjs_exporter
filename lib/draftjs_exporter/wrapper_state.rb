@@ -35,7 +35,7 @@ module DraftjsExporter
     end
 
     def parent_for(type)
-      options = block_map.fetch(type)
+      options = block_map.fetch(type, {})
       return reset_wrapper unless options.key?(:wrapper)
 
       new_options = nokogiri_options(*options.fetch(:wrapper))
@@ -57,7 +57,7 @@ module DraftjsExporter
     end
 
     def block_options(type)
-      block_map.fetch(type).fetch(:element)
+      block_map.fetch(type, {}).fetch(:element, '')
     end
 
     def create_wrapper(options)

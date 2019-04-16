@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'nokogiri'
 require 'draftjs_exporter/wrapper_state'
 require 'draftjs_exporter/entity_state'

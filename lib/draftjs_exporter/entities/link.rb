@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module DraftjsExporter
   module Entities
     class Link

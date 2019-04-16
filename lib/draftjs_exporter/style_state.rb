@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module DraftjsExporter
   class StyleState
     attr_reader :styles, :style_map
